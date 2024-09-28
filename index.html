@@ -1,0 +1,46 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Chemical Data Table</title>  
+    <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>
+    <nav>
+
+        <div>
+            <h1>Chemical Data</h1> 
+        </div>
+        <div>
+
+            <button onclick="addRow()">Add Chemical</button>  
+            <button onclick="sortData('newToOld')">Sort New to Old</button>  
+            <button onclick="sortData('oldToNew')">Sort Old to New</button>  
+            <button onclick="deleteSelected()">Delete Selected</button>  
+            <button onclick="exportData()">Export to PDF/Excel</button>  
+        </div>
+        
+    </nav>
+
+    <table id="chemicalTable">  
+        <thead>  
+            <tr>  
+                <th>Select</th>  
+                <th>Chemical Name</th>  
+                <th>Vendor</th>  
+                <th>Density</th>  
+                <th>Viscosity</th>  
+                <th>Packaging</th>  
+                <th>Pack Size</th>  
+                <th>Unit</th>  
+                <th>Quantity</th>  
+                <th>Actions</th>  
+            </tr>  
+        </thead>  
+        <tbody id="tableBody">
+        </tbody>  
+    </table>  
+</body>  
+<script src="script.js"></script>  
+</html>
